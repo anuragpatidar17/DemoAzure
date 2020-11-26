@@ -23,7 +23,6 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
-    feedsToUse: 'select'
 
 - task: VSBuild@1
   inputs:
@@ -31,8 +30,12 @@ steps:
     msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:DesktopBuildPackageLocation="$(build.artifactStagingDirectory)\WebApp.zip" /p:DeployIisAppPath="Default Web Site"'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
 - task: VSTest@2
   inputs:
     testSelector: 'testAssemblies'
-    testAssemblyVer2: 'DemoAzure.exe'
+    testAssemblyVer2: |
+      **\*.dll
+      **\*.exe
     searchFolder: '$(System.DefaultWorkingDirectory)'
+    feedsToUse: 'select'
