@@ -7,11 +7,7 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DemoAzure" expanded="True">
-            <Node name="DemoAzure" expanded="True">
-              <Node name="Packages" expanded="True">
-                <Node name="Microsoft.NET.Test.Sdk" selected="True" />
-              </Node>
-            </Node>
+            <Node name="DemoAzure" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
