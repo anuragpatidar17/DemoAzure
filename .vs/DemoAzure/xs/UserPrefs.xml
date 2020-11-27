@@ -7,7 +7,9 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="DemoAzure" expanded="True">
-            <Node name="DemoAzure" expanded="True" selected="True" />
+            <Node name="DemoAzure" expanded="True">
+              <Node name="Class1.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>

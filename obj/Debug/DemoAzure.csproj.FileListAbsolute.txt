@@ -41,7 +41,14 @@ C:/Users/KAMAL.RAWAL-b/source/repos/DemoAzure/obj/Debug/DemoAzure.pdb
 /Users/anuragpatidar/Desktop/DemoAzure/bin/Debug/WebDriver.dll
 /Users/anuragpatidar/Desktop/DemoAzure/bin/Debug/Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 /Users/anuragpatidar/Desktop/DemoAzure/bin/Debug/Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
-/Users/anuragpatidar/Desktop/DemoAzure/bin/Debug/nunit.framework.pdb
 /Users/anuragpatidar/Desktop/DemoAzure/bin/Debug/nunit.framework.xml
 /Users/anuragpatidar/Desktop/DemoAzure/bin/Debug/WebDriver.xml
 /Users/anuragpatidar/Desktop/DemoAzure/obj/Debug/DemoAzure.csproj.CopyComplete
+/Users/anuragpatidar/Desktop/DemoAzure/bin/Debug/NUnit.VisualStudio.TestAdapter.dll
+/Users/anuragpatidar/Desktop/DemoAzure/bin/Debug/Mono.Cecil.dll
+/Users/anuragpatidar/Desktop/DemoAzure/bin/Debug/Mono.Cecil.Rocks.dll
+/Users/anuragpatidar/Desktop/DemoAzure/bin/Debug/nunit.core.dll
+/Users/anuragpatidar/Desktop/DemoAzure/bin/Debug/nunit.core.interfaces.dll
+/Users/anuragpatidar/Desktop/DemoAzure/bin/Debug/nunit.util.dll
+/Users/anuragpatidar/Desktop/DemoAzure/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/anuragpatidar/Desktop/DemoAzure/bin/Debug/Mono.Cecil.Pdb.dll
