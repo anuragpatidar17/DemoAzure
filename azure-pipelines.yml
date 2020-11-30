@@ -36,7 +36,19 @@ steps:
     testSelector: 'testAssemblies'
     testAssemblyVer2: 'D:\a\1\s\bin\Debug\DemoAzure.exe'
     searchFolder: '$(System.DefaultWorkingDirectory)'
+
+    
+    # Publish Test Results
+# Publish test results to Azure Pipelines
 - task: PublishTestResults@2
   inputs:
-    testResultsFormat: 'VSTest'
-    testResultsFiles: '**/TEST-*.xml'
+    testResultsFormat: 'NUnit' 
+    # Options: JUnit, NUnit, VSTest, xUnit, cTest
+    testResultsFiles: '**/TEST-*.xml' 
+    searchFolder: '$(System.DefaultWorkingDirectory)' # Optional
+    #mergeTestResults: false # Optional
+    #failTaskOnFailedTests: false # Optional
+    #testRunTitle: # Optional
+    #buildPlatform: # Optional
+    #buildConfiguration: # Optional
+    #publishRunAttachments: true # Optional
