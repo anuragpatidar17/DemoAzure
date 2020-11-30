@@ -40,6 +40,7 @@ namespace SeleniumDemo
                 
                 // Enter something to search for
                 query.SendKeys(value);
+                console.WriteLine(value);
 
                 // Now submit the form. WebDriver will find the form for us from the element
                 query.Submit();
