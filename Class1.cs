@@ -34,7 +34,7 @@ namespace SeleniumDemo
                 //Excel
                 FileStream file = new FileStream("D:\\a\\1\\s\\MDS.xlsx", FileMode.Open, FileAccess.Read);
                 XSSFWorkbook workbook = new XSSFWorkbook(file1);
-                ISheet sheet = workbook.GetSheet("Sheet1");
+                ISheet sheet = workbook.GetSheet("Sheet");
 
                 var value =string.Format(sheet.GetRow(1).GetCell(0).StringCellValue)
                 
