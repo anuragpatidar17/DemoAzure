@@ -41,12 +41,13 @@ steps:
     # Publish Test Results
 # Publish test results to Azure Pipelines
 - task: PublishTestResults@2
+  
+  
   inputs:
-    testResultsFormat: 'VSTest' 
-    # Options: JUnit, NUnit, VSTest, xUnit, cTest
-    testResultsFiles: 'D:\a\_temp\TestResults\VssAdministrator_*.trx' 
+    testResultsFormat: 'VSTest'
+    testResultsFiles: 'D:\a\_temp\TestResults\VssAdministrator_*.trx'
+    mergeTestResults: true 
      
-
     #searchFolder: '$(System.DefaultWorkingDirectory)' # Optional
     #mergeTestResults: false # Optional
     #failTaskOnFailedTests: false # Optional
