@@ -36,7 +36,7 @@ namespace SeleniumDemo
                 XSSFWorkbook workbook = new XSSFWorkbook(file1);
                 ISheet sheet = workbook.GetSheet("Sheet");
 
-                var value =string.Format(sheet.GetRow(1).GetCell(0).StringCellValue)
+                var value = string.Format(sheet.GetRow(1).GetCell(0).StringCellValue)
                 
                 // Enter something to search for
                 query.SendKeys(value);
