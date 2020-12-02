@@ -34,24 +34,18 @@ steps:
 - task: VSTest@2
   inputs:
     testSelector: 'testAssemblies'
-    testAssemblyVer2: 'D:\a\1\s\bin\Debug\DemoAzure.sln'
+    testAssemblyVer2: |
+      **\*test*.dll
+      !**\*TestAdapter.dll
+      !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
 
     
     # Publish Test Results
 # Publish test results to Azure Pipelines
 - task: PublishTestResults@2
-  
-  
   inputs:
-    testResultsFormat: 'VSTest'
-    testResultsFiles: 'D:\a\_temp\TestResults\VssAdministrator_*.trx'
-    mergeTestResults: true 
-     
-    #searchFolder: '$(System.DefaultWorkingDirectory)' # Optional
-    #mergeTestResults: false # Optional
-    #failTaskOnFailedTests: false # Optional
-    #testRunTitle: # Optional
-    #buildPlatform: # Optional
-    #buildConfiguration: # Optional
-    #publishRunAttachments: true # Optional
+      testResultsFormat: 'VSTest'
+      testResultsFiles: '**/TEST-*.xml'
+      mergeTestResults: true
+- 
