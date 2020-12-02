@@ -48,4 +48,3 @@ steps:
       testResultsFormat: 'VSTest'
       testResultsFiles: '**/TEST-*.xml'
       mergeTestResults: true
-- 
