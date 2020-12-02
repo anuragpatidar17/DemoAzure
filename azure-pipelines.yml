@@ -34,7 +34,7 @@ steps:
 - task: VSTest@2
   inputs:
     testSelector: 'testAssemblies'
-    testAssemblyVer2: 'D:\a\1\s\DemoAzure\bin\Debug\DemoAzure.exe'
+    testAssemblyVer2: '**/*.exe'
     searchFolder: '$(System.DefaultWorkingDirectory)'
 
     
